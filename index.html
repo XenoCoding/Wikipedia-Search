@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Wikipedia Search</title>
+  
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Raleway" rel="stylesheet" />
+  
+</head>
+<body>
+  
+  <div class="container container-fluid">
+  
+    <h1 id="heading">Wikipedia Search</h1>
+
+    <div class="text-center">
+
+      <!--HTML ELEMENTS-->
+      <div id ="hide">
+        <input type='text' id='searchBar' class='form-control' placeholder="Search the wiki" onkeypress="return runScript(event)"></input>
+        <button class='btn btn-primary' id='submit'>Submit Search</button><br />
+        <a href="https://en.wikipedia.org/wiki/Special:Random" id="random" target="_blank">Or go to a random article</a>
+      </div>
+
+      <div id="searchResults">
+      </div>
+
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" id="wikiLogo" class="rounded-circle" />
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
